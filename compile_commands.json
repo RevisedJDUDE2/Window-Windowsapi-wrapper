@@ -1,0 +1,14 @@
+[
+{
+  "directory": "C:/Users/Emachines/Projects/AutoClicker",
+  "command": "C:/msys64/mingw64/bin/c++.exe -DWindowlib_EXPORTS @CMakeFiles/Windowlib.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles/Windowlib.dir/src/lib/Window.cpp.obj -c C:/Users/Emachines/Projects/AutoClicker/src/lib/Window.cpp",
+  "file": "C:/Users/Emachines/Projects/AutoClicker/src/lib/Window.cpp",
+  "output": "CMakeFiles/Windowlib.dir/src/lib/Window.cpp.obj"
+},
+{
+  "directory": "C:/Users/Emachines/Projects/AutoClicker",
+  "command": "C:/msys64/mingw64/bin/c++.exe  @CMakeFiles/Autoclick.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles/Autoclick.dir/src/main.cpp.obj -c C:/Users/Emachines/Projects/AutoClicker/src/main.cpp",
+  "file": "C:/Users/Emachines/Projects/AutoClicker/src/main.cpp",
+  "output": "CMakeFiles/Autoclick.dir/src/main.cpp.obj"
+}
+]

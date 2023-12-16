@@ -1,0 +1,4 @@
+C:/Users/Emachines/Projects/AutoClicker/Build/CMakeFiles/Autoclick.dir
+C:/Users/Emachines/Projects/AutoClicker/Build/CMakeFiles/Windowlib.dir
+C:/Users/Emachines/Projects/AutoClicker/Build/CMakeFiles/edit_cache.dir
+C:/Users/Emachines/Projects/AutoClicker/Build/CMakeFiles/rebuild_cache.dir
