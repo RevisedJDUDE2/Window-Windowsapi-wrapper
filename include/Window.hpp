@@ -46,3 +46,7 @@ void BindControls(const Window* wiInf) {
   std::cout << "BIND SUCCESSFULLY!\n";
   MessageBoxA(nullptr, "Bind was sucessfully called", "", MB_OK);
 }
+
+void disableWindowsMode(void) {
+  delete ppWinInf;
+}
