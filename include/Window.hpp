@@ -1,10 +1,13 @@
 #include <windows.h>
-#include <winuser.h>
 
 class ciInfo {
   public:
     void SETUPCLASS(void);
 };
+
+typedef struct {
+  void(*OnCreate)(HWND, HINSTANCE, UINT);
+} EXTENDED_WINDOW_INFO;
 
 static bool *bwWindowShould = new bool(true); 
 
@@ -31,6 +34,11 @@ class Window {
     bool ShouldClose() const {
       return *bwWindowShould;
     }
+    EXTENDED_WINDOW_INFO EXTENDEDWINDOWINFOONCREATE;
 };
 
+Window *ppWinInf = new Window;
 
+void BindControls(const Window* wiInf) {
+  ppWinInf->EXTENDEDWINDOWINFOONCREATE.OnCreate = wiInf->EXTENDEDWINDOWINFOONCREATE.OnCreate;
+}
