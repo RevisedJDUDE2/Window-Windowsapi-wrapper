@@ -19,7 +19,7 @@ LRESULT winCallBackProc(HWND handle, UINT msg, WPARAM wp, LPARAM lp) {
   LRESULT res = 0;
   switch (msg) {
     case WM_CREATE:
-      ppWinInf->EXTENDEDWINDOWINFOONCREATE.OnCreate(handle, GetModuleHandle(0), msg); //CALLS THE CREATE FUNCTION?
+      ppWinInf->EXTENDEDWINDOWINFOONCREATE.OnCreate(handle, GetModuleHandle(0), msg); //CALLS THE CREATE FUNCTION
       //TODO: break;
     case WM_QUIT:
       *bwWindowShould = false;
