@@ -6,7 +6,7 @@ void OnCreate(HWND, HINSTANCE, UINT);
 int WINAPI WinMain(HINSTANCE hThis, HINSTANCE hPrev, LPSTR Args, int Ncmd) {
   Window win1;
   win1.Init("Hello World!", 0, 0, 800, 600);
-  win1.EXTENDEDWINDOWINFOONCREATE.OnCreate = OnCreate;
+  win1.EXTENDEDWINDOWINFOONCREATE.OnCreate = OnCreate; //ENABLED Windows Api Mode!
   BindControls(&win1);
   while (win1.ShouldClose()) {
     MSG message; //HANDLE TO MESSAGE

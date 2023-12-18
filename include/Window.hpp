@@ -1,5 +1,6 @@
 #include <iostream>
 #include <windows.h>
+#include <winuser.h>
 
 class ciInfo {
   public:
@@ -43,4 +44,5 @@ Window *ppWinInf = new Window;
 void BindControls(const Window* wiInf) {
   ppWinInf->EXTENDEDWINDOWINFOONCREATE.OnCreate = wiInf->EXTENDEDWINDOWINFOONCREATE.OnCreate;
   std::cout << "BIND SUCCESSFULLY!\n";
+  MessageBoxA(nullptr, "Bind was sucessfully called", "", MB_OK);
 }
